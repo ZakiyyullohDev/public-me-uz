@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PublicMe - The Tunneling Service</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="icon" href="img/publicme-logos/png/logo-black-1-remove-and-border-radius.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="main">
+        <div class="logo-wrapper">
+            <img src="img/publicme-logos/png/logo-black.png" class="logo-img" alt="PublicMe" width="285" height="140">
+            <h2 class="logo-title">PublicMe - bir click orqali global bo'lish.</h2>
+        </div>
+        
+        <div class="infos">
+            <h3 class="info-title">Publicme o'zi nima?</h3>
+            
+            <ul class="info-ul">
+                <li class="info-li">Developerlar uchun static IP siz <strong>public</strong> ga chiqish uchun vosita.</li>
+                <li class="info-li">Local tarmoqdagi PORT va boshqa servislarni muammosiz <strong>public</strong> qilishingiz mumkin.</li>
+            </ul>
+            
+            <div class="download-btn-wrapper">
+                <button class="download-btn" id="downloadBtn">
+                    <i class="ri-download-line download-icon"></i>
+                    Yuklab olish <kbd class="exe">publicme.exe</kbd>
+                </button>
+            </div>
+            
+            <div class="ter-codes-wrapper">
+                <ul class="codes-ul">
+                    <li class="codes-li">
+                        <div class="codes-box">
+                            <h3 class="code-title info-title">
+                                Avtorizatsiya
+                            </h3>
+                            <div class="ter-code-pre">
+                                <p class="dollar">$</p><p class="ter-code-code" id="terCodeCode">
+                                    publicme.exe AUTH add-authtoken <span class="auth_token">token</span>
+                                </p>
+                                <button class="copy-btn" id="copyBtn">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="codes-li">
+                        <div class="codes-box">
+                            <h3 class="code-title info-title">
+                                Portni public qilish
+                            </h3>
+                            <div class="ter-code-pre">
+                                <p class="dollar">$</p><p class="ter-code-code" id="terCodeCode">
+                                    publicme HTTP port 80
+                                </p>
+                                <button class="copy-btn" id="copyBtn">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    
+    <div class="already-exist" id="alreadyExist">
+        <img class="check-icon" id="alreadyExistIcon" src="img/check.png" alt="check-one-icon" width="41" height="41">
+        <h2 class="already-exist-title" id="alreadyExistTitle">Email Already Exist!</h2>
+    </div>
+    
+    
+    <script type="module" src="js/checktoken.js"></script>
+    <script type="module" src="js/download.js"></script>
+</body>
+</html>
