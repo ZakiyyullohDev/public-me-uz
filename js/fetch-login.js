@@ -46,7 +46,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             
             // go to login.html
             setTimeout(() => {
-                window.location.href = 'dashboard-second.html'
+                window.location.href = 'index.html'
             }, 1500);
             // go to login.html
             
